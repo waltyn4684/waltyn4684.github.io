@@ -1,1 +1,95 @@
+/* ===========================
+   Midterm Performance Assessment Styles
+   =========================== */
+
+/* Task 3: overall page styling */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+  font-family: Arial, sans-serif;
+}
+
+/* Main content area centered with max-width */
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+/* Each section as a separate “content block” */
+section {
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+/* Task 4: navigation menu using Flexbox */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin: 0 15px;
+}
+
+nav a {
+  display: block;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #333333;
+  padding: 12px 20px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+nav a:hover {
+  background-color: #555555;
+}
+
+/* Task 5: product table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Caption required */
+caption {
+  caption-side: top;
+  text-align: left;
+  font-weight: bold;
+  padding: 10px 0;
+}
+
+/* Borders + padding + left alignment */
+th,
+td {
+  border: 1px solid #cccccc;
+  padding: 12px;
+  text-align: left;
+}
+
+/* Header row colors */
+thead {
+  background-color: #444444;
+  color: #ffffff;
+}
+
+/* colgroup: 1st + 3rd columns */
+.col-one,
+.col-three {
+  background-color: #f9f9f9;
+}
+
+/* Footer: centered, italic, top border separation */
+tfoot td {
+  text-align: center;
+  font-style: italic;
+  border-top: 2px solid #cccccc;
+}
 
