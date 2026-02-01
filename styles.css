@@ -102,3 +102,69 @@ footer {
   background: #1f2a37;
   color: #ffffff;
 }
+
+/* =========================
+   Structural + Visual Enhancements (required)
+   ========================= */
+
+/* Nav link hover transition (targets your existing nav links) */
+nav a {
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition: background-color 0.25s ease;
+}
+
+nav a:hover {
+  background-color: rgba(0, 0, 0, 0.12);
+}
+
+/* Main content hover zoom (targets each main content section) */
+main section {
+  transition: transform 0.25s ease;
+}
+
+main section:hover {
+  transform: scale(1.02);
+}
+
+/* Table styling for readability */
+#projects table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 12px;
+}
+
+#projects caption {
+  caption-side: top;
+  text-align: left;
+  font-weight: bold;
+  padding: 8px 0;
+}
+
+#projects thead {
+  background-color: #d7eef8;
+}
+
+#projects th,
+#projects td {
+  border: 1px solid #b7bcc4;
+  padding: 10px;
+  vertical-align: top;
+  text-align: left;
+}
+
+/* Colgroup/col coloring (1st + 3rd columns) */
+#projects col.col-project,
+#projects col.col-image {
+  background-color: #eef3ff;
+}
+
+/* Image placeholder styling */
+.project-img {
+  width: 160px;
+  height: auto;
+  display: block;
+  border: 1px solid #b7bcc4;
+  border-radius: 6px;
+}
