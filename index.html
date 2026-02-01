@@ -1,11 +1,16 @@
 <!doctype html>
 <html lang="en">
 <head>
+  <!--
+    Structural and Visual Enhancements
+    Author: waltyn4684
+    Date: 2026
+    Filename: index.html
+  -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CSS3 Styling</title>
 
-  <!-- Correct placement: CSS link belongs in the HEAD -->
   <link rel="stylesheet" href="styles.css" />
 </head>
 
@@ -13,7 +18,6 @@
   <header>
     <h1>Welcome to My Workspace</h1>
 
-    <!-- Navigation menu (internal page links) -->
     <nav>
       <ul>
         <li><a href="#about">About</a></li>
@@ -33,68 +37,67 @@
       </p>
     </section>
 
-  <section id="projects">
-  <header>
-    <h2>Projects</h2>
-  </header>
+    <section id="projects">
+      <header>
+        <h2>Projects</h2>
+      </header>
 
-  <p>
-    I’ll list my class projects here as I complete them, with links and short notes about what I learned.
-  </p>
+      <p>
+        I’ll list my class projects here as I complete them, with links and short notes about what I learned.
+      </p>
 
-  <!-- Projects table (required) -->
-  <table class="projects-table">
-    <caption>Sample Projects</caption>
+      <!-- Projects table (required) -->
+      <table class="projects-table">
+        <caption>Sample Projects</caption>
 
-    <!-- Use colgroup/col to color the 1st and 3rd columns -->
-    <colgroup>
-      <col class="col-project" />
-      <col class="col-desc" />
-      <col class="col-image" />
-    </colgroup>
+        <!-- Use colgroup/col to color the 1st and 3rd columns -->
+        <colgroup>
+          <col class="col-project" />
+          <col class="col-desc" />
+          <col class="col-image" />
+        </colgroup>
 
-    <thead>
-      <tr>
-        <th scope="col">Project Name</th>
-        <th scope="col">Description</th>
-        <th scope="col">Image</th>
-      </tr>
-    </thead>
+        <thead>
+          <tr>
+            <th scope="col">Project Name</th>
+            <th scope="col">Description</th>
+            <th scope="col">Image</th>
+          </tr>
+        </thead>
 
-    <tbody>
-      <tr>
-        <td>HTML Table Practice</td>
-        <td>Built a structured projects table using thead, tbody, tfoot, colgroup, and caption.</td>
-        <td>
-          <img
-            class="project-img"
-            alt="HTML Table Practice image placeholder"
-            src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='100'><rect width='100%25' height='100%25' fill='%23e9eef6'/><text x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='%23333' font-family='Arial' font-size='14'>Image%20Placeholder</text></svg>"
-          />
-        </td>
-      </tr>
+        <tbody>
+          <tr>
+            <td>HTML Table Practice</td>
+            <td>Built a structured projects table using thead, tbody, tfoot, colgroup, and caption.</td>
+            <td>
+              <img
+                class="project-img"
+                alt="HTML Table Practice image placeholder"
+                src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='100'><rect width='100%25' height='100%25' fill='%23e9eef6'/><text x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='%23333' font-family='Arial' font-size='14'>Image%20Placeholder</text></svg>"
+              />
+            </td>
+          </tr>
 
-      <tr>
-        <td>CSS Transitions + Hover</td>
-        <td>Added hover color transitions on nav links and a smooth zoom effect on sections.</td>
-        <td>
-          <img
-            class="project-img"
-            alt="CSS Transitions image placeholder"
-            src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='100'><rect width='100%25' height='100%25' fill='%23e9eef6'/><text x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='%23333' font-family='Arial' font-size='14'>Image%20Placeholder</text></svg>"
-          />
-        </td>
-      </tr>
-    </tbody>
+          <tr>
+            <td>CSS Transitions + Hover</td>
+            <td>Added hover color transitions on nav links and a smooth zoom effect on sections.</td>
+            <td>
+              <img
+                class="project-img"
+                alt="CSS Transitions image placeholder"
+                src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='100'><rect width='100%25' height='100%25' fill='%23e9eef6'/><text x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='%23333' font-family='Arial' font-size='14'>Image%20Placeholder</text></svg>"
+              />
+            </td>
+          </tr>
+        </tbody>
 
-    <tfoot>
-      <tr>
-        <td colspan="3">Table uses row/column groups + caption + readable styling.</td>
-      </tr>
-    </tfoot>
-  </table>
-</section>
-
+        <tfoot>
+          <tr>
+            <td colspan="3">Table uses row/column groups + caption + readable styling.</td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
 
     <section id="contact">
       <header>
