@@ -59,3 +59,6 @@ Prompt I used (example):
 - “Help me write a README.md for GitHub Pages hosting and local hosting with XAMPP, and tell me what proof I need for the rubric.”
 
 ---
+
+## Local Hosting (XAMPP) Screenshot
+<img width="1918" height="1078" alt="5 8 ss waltyn4684site" src="https://github.com/user-attachments/assets/2aa288d7-af02-4be8-bc42-59bf998d8190" />
