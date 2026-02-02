@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 /*
   4.8 Project - Responsive Design
   Author: Wallace Tyner
@@ -5,7 +7,7 @@
   Filename: styles.css
 */
 
-/* Basic reset */
+/* Basic page setup */
 * {
   box-sizing: border-box;
 }
@@ -13,70 +15,70 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background: #f3f6fb;
+  background: #eef2f6;
   color: #111;
   line-height: 1.4;
 }
 
-/* Header */
+/* Header + nav */
 .site-header {
-  background: #233c56;
+  background: #233f5a;
   color: #fff;
   padding: 18px 14px;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .site-title {
   margin: 0 0 10px 0;
-  font-size: 26px;
+  font-size: 34px;
+  font-weight: 800;
 }
 
-/* Navigation Flexbox */
 .site-nav {
   display: flex;
-  flex-direction: row;
   gap: 18px;
-  justify-content: center;
-  align-items: center;
 }
 
 .site-nav a {
   color: #fff;
   text-decoration: none;
-  padding: 8px 10px;
+  font-weight: 700;
+  padding: 6px 10px;
   border-radius: 6px;
 }
 
-/* Hover + smooth transition for nav */
-.site-nav a {
-  transition: background-color 0.3s ease;
-}
-.site-nav a:hover {
-  background: rgba(255, 255, 255, 0.18);
+.site-nav a:hover,
+.site-nav a:focus {
+  background: rgba(255, 255, 255, 0.15);
+  outline: none;
 }
 
-/* Main content area Flexbox */
+/* Main content flexbox */
 .page {
   display: flex;
   flex-direction: column;
   gap: 18px;
-  padding: 18px;
-  max-width: 980px;
+  padding: 22px 14px 40px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
+/* Card sections */
 .card {
   background: #fff;
   border-radius: 10px;
-  padding: 16px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 
 .card h2 {
   margin-top: 0;
+  margin-bottom: 10px;
 }
 
-/* Contact form Flexbox */
+/* Contact form flexbox */
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -94,92 +96,63 @@ label {
   font-weight: 700;
 }
 
-/* Form inputs + textarea styling (padding, radius, spacing) */
-input,
+/* Form styling (padding, radius, spacing) */
+input[type="text"],
+input[type="email"],
 textarea {
-  padding: 10px;
-  border-radius: 8px;
-  border: 2px solid #c7d3e0;
-  font-size: 16px;
+  padding: 10px 12px;
+  border: 1px solid #c9d3e0;
+  border-radius: 6px;
+  font-size: 15px;
 }
 
-/* REQUIRED by instructions:
-   Add transition: border-color 0.3s ease to input and textarea fields */
-input,
+/* Required transition: border-color on inputs + textarea */
+input[type="text"],
+input[type="email"],
 textarea {
   transition: border-color 0.3s ease;
 }
 
-/* Hover + Focus effects */
-input:hover,
-textarea:hover {
-  border-color: #7fa3c9;
-}
-
-input:focus,
+/* Focus effects */
+input[type="text"]:focus,
+input[type="email"]:focus,
 textarea:focus {
-  border-color: #2f6ea5;
+  border-color: #2b6ea6;
   outline: none;
 }
 
 /* Submit button styling */
 .actions {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
 }
 
-button[type="submit"] {
-  padding: 10px 16px;
-  border: 0;
-  border-radius: 8px;
-  background: #2f6ea5;
+.actions input[type="submit"] {
+  width: fit-content;
+  padding: 9px 16px;
+  border: none;
+  border-radius: 6px;
+  background: #2b6ea6;
   color: #fff;
-  font-size: 16px;
   cursor: pointer;
+  font-weight: 700;
+  transition: background-color 0.3s ease; /* Required transition for submit */
 }
 
-/* REQUIRED by instructions:
-   Add transition: background-color 0.3s ease to the submit button */
-button[type="submit"] {
-  transition: background-color 0.3s ease;
+.actions input[type="submit"]:hover,
+.actions input[type="submit"]:focus {
+  background: #1f5783;
+  outline: none;
 }
 
-button[type="submit"]:hover {
-  background: #244f78;
+/* Responsive Design Implementation (media queries) */
+/* Phone */
+@media (min-width: 480px) {
+  .page {
+    padding: 26px 18px 44px;
+  }
 }
-
-/* Footer */
-.site-footer {
-  text-align: center;
-  padding: 14px;
-  color: #333;
-}
-
-/* Responsive design using media queries:
-   Minimum widths for phone/tablet/desktop */
-
-/* Phone: default (no media query needed) */
 
 /* Tablet */
-@media (min-width: 700px) {
-  .page {
-    padding: 24px;
-  }
-
-  .contact-form {
-    gap: 16px;
-  }
-}
-
-/* Desktop */
-@media (min-width: 1000px) {
-  .page {
-    max-width: 1050px;
-  }
-
-  /* Example: keep content comfortable on wide screens */
-  .card {
-    padding: 20px;
-  }
-}
+@media (min-width: 768px) {
+  .site-header {
+    flex-direction: r
