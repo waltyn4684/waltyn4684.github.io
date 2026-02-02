@@ -1,0 +1,185 @@
+/*
+  4.8 Project - Responsive Design
+  Author: Wallace Tyner
+  Date: 02/01/2026
+  Filename: styles.css
+*/
+
+/* Basic reset */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f3f6fb;
+  color: #111;
+  line-height: 1.4;
+}
+
+/* Header */
+.site-header {
+  background: #233c56;
+  color: #fff;
+  padding: 18px 14px;
+  text-align: center;
+}
+
+.site-title {
+  margin: 0 0 10px 0;
+  font-size: 26px;
+}
+
+/* Navigation Flexbox */
+.site-nav {
+  display: flex;
+  flex-direction: row;
+  gap: 18px;
+  justify-content: center;
+  align-items: center;
+}
+
+.site-nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 10px;
+  border-radius: 6px;
+}
+
+/* Hover + smooth transition for nav */
+.site-nav a {
+  transition: background-color 0.3s ease;
+}
+.site-nav a:hover {
+  background: rgba(255, 255, 255, 0.18);
+}
+
+/* Main content area Flexbox */
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 18px;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 16px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.card h2 {
+  margin-top: 0;
+}
+
+/* Contact form Flexbox */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 10px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+label {
+  font-weight: 700;
+}
+
+/* Form inputs + textarea styling (padding, radius, spacing) */
+input,
+textarea {
+  padding: 10px;
+  border-radius: 8px;
+  border: 2px solid #c7d3e0;
+  font-size: 16px;
+}
+
+/* REQUIRED by instructions:
+   Add transition: border-color 0.3s ease to input and textarea fields */
+input,
+textarea {
+  transition: border-color 0.3s ease;
+}
+
+/* Hover + Focus effects */
+input:hover,
+textarea:hover {
+  border-color: #7fa3c9;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #2f6ea5;
+  outline: none;
+}
+
+/* Submit button styling */
+.actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+button[type="submit"] {
+  padding: 10px 16px;
+  border: 0;
+  border-radius: 8px;
+  background: #2f6ea5;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* REQUIRED by instructions:
+   Add transition: background-color 0.3s ease to the submit button */
+button[type="submit"] {
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background: #244f78;
+}
+
+/* Footer */
+.site-footer {
+  text-align: center;
+  padding: 14px;
+  color: #333;
+}
+
+/* Responsive design using media queries:
+   Minimum widths for phone/tablet/desktop */
+
+/* Phone: default (no media query needed) */
+
+/* Tablet */
+@media (min-width: 700px) {
+  .page {
+    padding: 24px;
+  }
+
+  .contact-form {
+    gap: 16px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1000px) {
+  .page {
+    max-width: 1050px;
+  }
+
+  /* Example: keep content comfortable on wide screens */
+  .card {
+    padding: 20px;
+  }
+}
