@@ -36,6 +36,9 @@ body {
   flex-direction: row;
   justify-content: center;
   gap: 24px;
+
+  /* keeps nav links from overflowing on smaller screens */
+  flex-wrap: wrap;
 }
 
 .site-nav a {
