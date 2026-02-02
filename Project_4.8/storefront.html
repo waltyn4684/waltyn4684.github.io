@@ -1,1 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Storefront - Midterm</title>
 
+  <!-- Link the required external stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Header: student ID + store name -->
+  <header>
+    <h1>waltyn4684 | Waltyn’s Supply Store</h1>
+  </header>
+
+  <!-- Navigation: 3 internal links -->
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main content area -->
+  <main>
+    <!-- Home section -->
+    <section id="home">
+      <h2>Home</h2>
+      <p>
+        Welcome to my simple storefront page for the midterm. Use the navigation links to jump between sections.
+      </p>
+    </section>
+
+    <!-- Products section (includes table) -->
+    <section id="products">
+      <h2>Products</h2>
+      <p>
+        Here’s a quick inventory list showing sample products, categories, and availability.
+      </p>
+
+      <!-- Product table (required structure + caption + colgroup) -->
+      <table>
+        <caption>Store Inventory</caption>
+
+        <!-- colgroup: 1st + 3rd columns have light gray background -->
+        <colgroup>
+          <col class="col-one" />
+          <col />
+          <col class="col-three" />
+          <col />
+        </colgroup>
+
+        <thead>
+          <tr>
+            <th scope="col">Product Name</th>
+            <th scope="col">Price</th>
+            <th scope="col">Category</th>
+            <th scope="col">Availability</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Wireless Mouse</td>
+            <td>$19.99</td>
+            <td>Accessories</td>
+            <td>In Stock</td>
+          </tr>
+          <tr>
+            <td>USB-C Charger</td>
+            <td>$24.99</td>
+            <td>Power</td>
+            <td>Limited</td>
+          </tr>
+          <tr>
+            <td>Notebook Pack</td>
+            <td>$9.99</td>
+            <td>Office</td>
+            <td>In Stock</td>
+          </tr>
+        </tbody>
+
+        <tfoot>
+          <tr>
+            <td colspan="4">Prices and availability are sample data for the midterm table requirement.</td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+
+    <!-- Contact section -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>
+        For class purposes, contact info can be simple. Example: <a href="mailto:student@example.com">student@example.com</a>
+      </p>
+    </section>
+  </main>
+
+  <!-- Footer with copyright symbol -->
+  <footer>
+    <p>&copy; 2026 waltyn4684</p>
+  </footer>
+</body>
+</html>
