@@ -62,3 +62,14 @@ Prompt I used (example):
 
 ## Local Hosting (XAMPP) Screenshot
 <img width="1918" height="1078" alt="5 8 ss waltyn4684site" src="https://github.com/user-attachments/assets/2aa288d7-af02-4be8-bc42-59bf998d8190" />
+
+---
+
+
+## Prompt Engineering
+- Prompt: “Explain how to install and run XAMPP on Windows and where to place my site files.”
+  Result: Installed XAMPP, started Apache, and placed my site in C:\xampp\htdocs\waltyn4684site.
+
+- Prompt: “Why am I seeing ‘Index of /waltyn4684site’ instead of my homepage?”
+  Result: Renamed the homepage file to index.html so Apache loads it automatically.
+
